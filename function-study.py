@@ -1,6 +1,9 @@
 #python中的五种数据容器：
 #列表list， 元组touple， 字符串str， 集合set， 字典dict
 
+
+
+
 name_list = ["df","dg","as"]
 name_list[0] = 1 #修改元素
 name_list.insert(2,"dfgh") #插入元素
