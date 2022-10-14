@@ -165,7 +165,7 @@ print(len(score6)) #计算键值对的数量
 keys = score6.keys() #获取全部的key
 print(keys)
 for i in keys: #遍历字典
-    print(f"学生：{i},分数：{score6[i]}")"""
+    print(f"学生：{i},分数：{score6[i]}")
 
 
 #函数
@@ -181,4 +181,21 @@ def add(a,b):
 r = add(1,2)
 print(r)
 
+#函数进阶
+def user(name,age,gender):
+    print(f"姓名是{name},年龄是{age},性别是{gender}")
+user("Tom",12,"男") #位置参数
 
+def user(name,age,gender):
+    print(f"姓名是{name},年龄是{age},性别是{gender}")
+user(age=20,name="Lily",gender="女") #关键字参数 """
+
+#函数作为参数传递
+def test_func(additation):
+    result = additation(1,2)
+    print(result)
+def additation(a,b):
+    return a + b
+test_func(additation)
+
+#lambda匿名函数
